@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'Soul';
+            src: url('fonts/Soulmeh.otf') format(opentype);
+            font-weight: normal;
+            font-style: normal;
+        }
+        /*
+        Tipos de format()
+        - opentype (otf)
+        - truettype (ttf)
+        - embrdded-opentype
+        - truetype-aat (Apple Advenced Typography)
+        - svg
+        */
+        body {
+            font-family: 'Soul', Helvetica, sans-serif;
+            font-weight: normal;
+        }
+        h1 {
+            font-family:'Soul', Times, serif;
+            font-weight: normal;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime asperioreols ea eius ex earum ipsam veritatis adipisci quam quae nam sint, similique beatae unde voluptatibus, laudantium, cumque voluptatum? Totam, accusantium!</p>
+    <a href="font01.html">font1</a>
+</body>
+</html>

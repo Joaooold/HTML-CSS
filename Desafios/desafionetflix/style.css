@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+}
+
+ul {
+    height: 25px;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.logo {
+    width: 75px;
+    margin: 15px 15px;
+}
+
+.avatar {
+    width: 23px;
+    margin: 15px 15px;
+}
+
+video {
+    width: 100%;
+    min-height: 80%;
+}
+
+.cabecalho {
+    color: white;
+    position: absolute;
+    bottom: 190px;
+    width: 44%;
+    margin-left: 35px;
+    font-size: 14px;
+    z-index: 3;
+
+    
+}
+
+.titulo {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.resumo {
+    margin-top: 20px;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.assistir {
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-right: 7px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.infos { 
+    color: black;
+    background-color: rgba(255, 255, 255, 0.35);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.foto-carrosel {
+    height: 130px;
+}
+
+.filmesseries {
+    color: white;
+    margin-left: 30px;
+}
+
+#carouselExampleControls {
+    background-color: transparent;
+    position: absolute;
+}
+.botao {
+    border: none;
+    position: absolute;
+    top: 110px;
+    right: 20px;
+    z-index: 6;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}

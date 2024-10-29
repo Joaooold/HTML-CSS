@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*
+        : = pseudo classes
+        :: = pseudo elemento
+        > = children
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: darkred;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: chartreuse;
+        } 
+        a::before {
+            content: '⇒ ';
+        }
+
+        a::after {
+            
+        }
+        
+    </style>
+    <title>Personalisando links</title>
+</head>
+<body>
+    <h1>Personalisando links</h1>
+    <ul>
+        <a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/15%20-Seletores%20personalizados.pdf" target="_blank">
+            <li>Repositório GitHub</li>
+        </a>
+        <a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22&ab_channel=CursoemV%C3%ADdeo" target="_blank">
+            <li>Canal do YouTube</li>
+        </a>
+        <a href="https://www.cursoemvideo.com/" target="_blank">
+            <li>Site do Cursoemvídeo</li>
+        </a>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: #f9dbbd;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+        header {
+            background-color: white;
+            padding: 5px;
+            box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.541);
+            border-radius: 10px ;
+        }
+        nav {
+            background-color: rgb(83, 83, 83);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        a:hover {
+            color: aqua;
+            text-decoration: underline;
+        }
+        
+        #secao {
+            background-color: white;
+            height: 220px;
+            box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.541);
+            border-radius: 40px 20px;
+            
+        }
+        #secao2 {
+            margin: 10px;
+        }
+        .artigo {
+            background-color: lightgray;
+            height: 160px;
+            border-radius: 10px 10px 30px 30px;
+        }
+        .artigo > aside {
+            background-color: rgb(31, 31, 31);
+            color: white;
+            border-radius: 100px ;
+            text-align: center;
+            width: 400px;
+        }
+        
+        section > p {
+         margin: 0;
+         padding-top: 15px;
+         
+         
+        }
+ 
+        footer {
+            background-color: black;
+            color: white;
+            padding: 5px;
+            text-align: center;
+            margin-top: 15px;
+            border-radius: 100px ;
+        }
+        footer > p {
+            margin: 0;
+        }
+        .bola {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            margin: 10px;
+            border-radius: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main id="secao">
+        <section id="secao2">
+            <section>
+                <p>Esportes politica e Tecnologia</p>
+            </section>
+            <article class="artigo">
+                <h2>Nóticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vel iste tenetur impedit esse enim voluptas ullam aspernatur eos consectetur? Iusto sequi nisi, voluptatibus itaque natus commodi aliquid ratione optio.</p>
+                <aside>
+                    <p>Este artigo foi feito por João batista.</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer><p>Desenvolvido por João Batista</p></footer>
+    <div class="bola"></div>
+</body>
+
+</html>
