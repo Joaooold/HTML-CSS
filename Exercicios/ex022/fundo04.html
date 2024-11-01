@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamentos de imagens pequenas</title>
+    <style>
+        body {
+            border: 4px dashed black;
+            height: 96vh;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+           
+        }
+        #img {
+            position: absolute;
+            top: 50%; /* Centraliza verticalmente */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta a posição para ficar no centro */
+            
+
+        }
+    </style>
+</head>
+<body>
+    <img src="imagens/pattern001.png" alt="" id="img">
+</body>
+</html>
