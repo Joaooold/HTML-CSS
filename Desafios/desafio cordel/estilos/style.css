@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    min-height: 100vh;
+}
+
+header {
+    background-color: black;
+    height: 200px;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+
+h1 {
+    font-family: "Passion One", sans-serif;
+    color: white;
+    font-size: 60px;
+    padding-top: 40px;
+    
+}
+.nome {
+    color: white;
+    font-family: sans-serif;
+    margin-top: 10px;
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+    color: white;
+
+}
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: "Sriracha", sans-serif; 
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+section p {
+    padding: 15px;
+}
+.secaoimg1 {
+    background-image: url(../pacote-d012/imagens/background001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 280px;
+    position: relative;
+    box-shadow: inset 3px 3px 12px black;
+}
+
+.secaoimg1 p {
+    color: white;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 220px;
+    position: absolute;
+    top: 20px;
+    left: 7px;
+    
+}
+.secaoimg2 {
+    background-image: url(../pacote-d012/imagens/background002.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 280px;
+    position: relative;
+    box-shadow: inset 3px 3px 12px black;
+}
+
+
+.secaoimg2 p {
+    color: white;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 220px;
+    position: absolute;
+    top: 20px;
+    left: 7px; 
+}
+
+
+
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-family: sans-serif;
+    height: 35px;
+    padding: 10px;
+}
