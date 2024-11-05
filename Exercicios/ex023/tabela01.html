@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                position: relative;
+            }
+            h1 {
+                text-align: center;
+                margin: auto;
+            }
+            table {
+                position: absolute;
+                left: 35%;
+                border-collapse: collapse;
+                margin: auto;
+                
+            }
+
+            td {
+                border: 1px solid black;
+                width: 100px;
+                height: 100px;
+                color: red;
+                padding: 10px;
+                text-align: center;
+                
+                
+                
+            }
+            .linha {
+                background-color: aqua;
+                
+            }
+            .a2 {
+                background-color: chartreuse;
+            }
+            .b3 {
+                background-color: darkmagenta;
+            }
+            .c4 {
+                background-position: center center;
+                background-size: cover;
+                background-image: url(data:image/jpeg;base64,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);
+            }
+        </style>
+</head>
+<body>
+    <!-- HIERARQUIA DE TABELAS (SIMPLES)
+     TABLE = TABELA 
+        TABLE ROW = tr LINHA DE TABELA
+            TABLE HEADER = th CABEÇALHO DE TABELA
+            TABLE DATA = td DADO DE TABELA-->
+            <h1>MINHA PRIMEIRA TABELA</h1>
+    <table>
+        <tr class="linha"> <!--PRIMEIRA LINHA DA TABELA-->
+            <td>A1</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr> <!--SEGUNGA LINHA DA TABELA-->
+            <td class="a2">A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr> <!--TERCEIRA LINHA DA TABELA-->
+            <td>A3</td>
+            <td class="b3">B3</td>
+            <td>C3</td>
+        </tr>
+        <tr> <!--QUARTA LINHA DA TABELA-->
+            <td>A4</td>
+            <td>B4</td>
+            <td class="c4">C4</td>
+        </tr>
+    </table>
+</body>
+</html>
