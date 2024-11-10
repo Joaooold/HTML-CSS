@@ -10,6 +10,17 @@
     table {
         border-collapse: collapse;
         border: 1px solid black;
+        width: 500px;
+        position: relative;
+    }
+
+    caption {
+        border: 1px solid black;
+        padding: 10px;
+        background-color: lightgray;
+        font-weight: bold;
+        font-size: 1.5em;
+
     }
 
     th, td {
@@ -21,121 +32,154 @@
         background-color: gray;
         color: white;
     }
+    .num {
+        text-align: right;
+        ;
+    }
+    /* Efeito zebrado  */
+    tbody > tr:nth-child(even) {
+        background-color: lightgray;
+    /* ntr-child(odd) = impar / ntr-child(even) = Par */
+    }
+    thead > tr > th {
+        position: sticky;
+        top: -1px;
+    }
     </style>
     <title>Tabelas</title>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População dos Estados Federativos</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>% da população</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col"> % da população</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>45 973 190</td>
-                <td>21,88%</td>
+                <td class="num">45 973 190</td>
+                <td class="num">21,88%</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>21 322 692	</td>
-                <td>10,11%</td>
+                <td class="num">21 322 692	</td>
+                <td class="num">10,11%</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>17 219 679	</td>
-                <td>7,91%</td>
+                <td class="num">17 219 679	</td>
+                <td class="num">7,91%</td>
             </tr>
             <tr>
                 <td>Bahia</td>
-                <td>14 850 513</td>
-                <td>6,96%</td>
+                <td class="num">14 850 513</td>
+                <td class="num">6,96%</td>
             </tr>
             <tr>
                 <td>Paraná</td>
-                <td>11 824 665</td>
-                <td>5,64%</td>
+                <td class="num">11 824 665</td>
+                <td class="num">5,64%</td>
             </tr>
             <tr>
                 <td>Rio Grande do Sul</td>
-                <td>11 229 915	</td>
-                <td>5,36%</td>
+                <td class="num">11 229 915	</td>
+                <td class="num">5,36%</td>
             </tr>
             <tr>
                 <td>Pernambuco	</td>
-                <td>9 539 029</td>
-                <td>4,46%</td>
+                <td class="num">9 539 029</td>
+                <td class="num">4,46%</td>
             </tr>
             <tr>
                 <td>Ceará</td>
-                <td>9 233 65</td>
-                <td>4,33%</td>
+                <td class="num">9 233 65</td>
+                <td class="num">4,33%</td>
             </tr>
             <tr>
                 <td>Pará</td>
-                <td>8 664 306</td>
-                <td>4,1%</td>
+                <td class="num">8 664 306</td>
+                <td class="num">4,1%</td>
             </tr>
             <tr>
                 <td>Santa Catarina</td>
-                <td>8 058 447</td>
-                <td>3,75%</td>
+                <td class="num">8 058 447</td>
+                <td class="num">3,75%</td>
             </tr>
             <tr>
                 <td>Goiás</td>
-                <td>7 350 483</td>
-                <td>3,47%</td>
+                <td class="num">7 350 483</td>
+                <td class="num">3,47%</td>
             </tr>
             <tr>
                 <td>Maranhão</td>
-                <td>7 010 960</td>
-                <td>3,34%</td>
+                <td class="num">7 010 960</td>
+                <td class="num">3,34%</td>
             </tr>
             <tr>
                 <td>Amazonas</td>
-                <td>4 281 209</td>
-                <td>1,94%</td>
+                <td class="num">4 281 209</td>
+                <td class="num">1,94%</td>
             </tr>
             <tr>
                 <td>Paraíba</td>
-                <td>4 145 040</td>
-                <td>1,96%</td>
+                <td class="num">4 145 040</td>
+                <td class="num">1,96%</td>
             </tr>
             <tr>
                 <td>Espírito Santo</td>
-                <td>4 102 129</td>
-                <td>1,89%</td>
+                <td class="num">4 102 129</td>
+                <td class="num">1,89%</td>
             </tr>
             <tr>
                 <td>Mato Grosso</td>
-                <td>3 836 399</td>
-                <td>1,8%/td>
+                <td class="num">3 836 399</td>
+                <td class="num">1,8%</td>
             </tr>
             <tr>
                 <td>Rio Grande do Norte</td>
-                <td>3 446 071</td>
-                <td>1,63%</td>
+                <td class="num">3 446 071</td>
+                <td class="num">1,63%</td>
             </tr>
             <tr>
                 <td>Piauí</td>
-                <td>3 375 646</td>
-                <td>1,61%</td>
+                <td class="num">3 375 646</td>
+                <td class="num">1,61%</td>
             </tr>
             <tr>
                 <td>Alagoas</td>
-                <td>3 220 104</td>
-                <td>1,54%</td>
+                <td class="num">3 220 104</td>
+                <td class="num">1,54%</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <th>212 583 720</th>
+                <th><strong>Total de Habitantes</strong></th>
+                <th scope="row">212 583 720</th>
             </tr>
         </tfoot>
     </table>
-</b
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veniam minus ipsam qui iusto neque explicabo assumenda ea doloribus possimus voluptates facilis, nulla porro odio? Aperiam earum fugit debitis maxime? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus facere fugiat distinctio molestiae ullam nesciunt voluptates, consequuntur magnam, ducimus aliquam sapiente perferendis nostrum odit ex. Tenetur, facere in! Mollitia, iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque voluptates voluptatibus, cumque sequi veniam nisi, adipisci incidunt similique sapiente deserunt dolorum voluptate. Maiores dolorem deserunt impedit dolore earum minima!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veniam minus ipsam qui iusto neque explicabo assumenda ea doloribus possimus voluptates facilis, nulla porro odio? Aperiam earum fugit debitis maxime? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus facere fugiat distinctio molestiae ullam nesciunt voluptates, consequuntur magnam, ducimus aliquam sapiente perferendis nostrum odit ex. Tenetur, facere in! Mollitia, iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque voluptates voluptatibus, cumque sequi veniam nisi, adipisci incidunt similique sapiente deserunt dolorum voluptate. Maiores dolorem deserunt impedit dolore earum minima!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veniam minus ipsam qui iusto neque explicabo assumenda ea doloribus possimus voluptates facilis, nulla porro odio? Aperiam earum fugit debitis maxime? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus facere fugiat distinctio molestiae ullam nesciunt voluptates, consequuntur magnam, ducimus aliquam sapiente perferendis nostrum odit ex. Tenetur, facere in! Mollitia, iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque voluptates voluptatibus, cumque sequi veniam nisi, adipisci incidunt similique sapiente deserunt dolorum voluptate. Maiores dolorem deserunt impedit dolore earum minima!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veniam minus ipsam qui iusto neque explicabo assumenda ea doloribus possimus voluptates facilis, nulla porro odio? Aperiam earum fugit debitis maxime? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus facere fugiat distinctio molestiae ullam nesciunt voluptates, consequuntur magnam, ducimus aliquam sapiente perferendis nostrum odit ex. Tenetur, facere in! Mollitia, iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque voluptates voluptatibus, cumque sequi veniam nisi, adipisci incidunt similique sapiente deserunt dolorum voluptate. Maiores dolorem deserunt impedit dolore earum minima!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veniam minus ipsam qui iusto neque explicabo assumenda ea doloribus possimus voluptates facilis, nulla porro odio? Aperiam earum fugit debitis maxime? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus facere fugiat distinctio molestiae ullam nesciunt voluptates, consequuntur magnam, ducimus aliquam sapiente perferendis nostrum odit ex. Tenetur, facere in! Mollitia, iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque voluptates voluptatibus, cumque sequi veniam nisi, adipisci incidunt similique sapiente deserunt dolorum voluptate. Maiores dolorem deserunt impedit dolore earum minima!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veniam minus ipsam qui iusto neque explicabo assumenda ea doloribus possimus voluptates facilis, nulla porro odio? Aperiam earum fugit debitis maxime? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus facere fugiat distinctio molestiae ullam nesciunt voluptates, consequuntur magnam, ducimus aliquam sapiente perferendis nostrum odit ex. Tenetur, facere in! Mollitia, iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque voluptates voluptatibus, cumque sequi veniam nisi, adipisci incidunt similique sapiente deserunt dolorum voluptate. Maiores dolorem deserunt impedit dolore earum minima!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veniam minus ipsam qui iusto neque explicabo assumenda ea doloribus possimus voluptates facilis, nulla porro odio? Aperiam earum fugit debitis maxime? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus facere fugiat distinctio molestiae ullam nesciunt voluptates, consequuntur magnam, ducimus aliquam sapiente perferendis nostrum odit ex. Tenetur, facere in! Mollitia, iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque voluptates voluptatibus, cumque sequi veniam nisi, adipisci incidunt similique sapiente deserunt dolorum voluptate. Maiores dolorem deserunt impedit dolore earum minima!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veniam minus ipsam qui iusto neque explicabo assumenda ea doloribus possimus voluptates facilis, nulla porro odio? Aperiam earum fugit debitis maxime? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus facere fugiat distinctio molestiae ullam nesciunt voluptates, consequuntur magnam, ducimus aliquam sapiente perferendis nostrum odit ex. Tenetur, facere in! Mollitia, iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque voluptates voluptatibus, cumque sequi veniam nisi, adipisci incidunt similique sapiente deserunt dolorum voluptate. Maiores dolorem deserunt impedit dolore earum minima!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veniam minus ipsam qui iusto neque explicabo assumenda ea doloribus possimus voluptates facilis, nulla porro odio? Aperiam earum fugit debitis maxime? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus facere fugiat distinctio molestiae ullam nesciunt voluptates, consequuntur magnam, ducimus aliquam sapiente perferendis nostrum odit ex. Tenetur, facere in! Mollitia, iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque voluptates voluptatibus, cumque sequi veniam nisi, adipisci incidunt similique sapiente deserunt dolorum voluptate. Maiores dolorem deserunt impedit dolore earum minima!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veniam minus ipsam qui iusto neque explicabo assumenda ea doloribus possimus voluptates facilis, nulla porro odio? Aperiam earum fugit debitis maxime? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus facere fugiat distinctio molestiae ullam nesciunt voluptates, consequuntur magnam, ducimus aliquam sapiente perferendis nostrum odit ex. Tenetur, facere in! Mollitia, iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque voluptates voluptatibus, cumque sequi veniam nisi, adipisci incidunt similique sapiente deserunt dolorum voluptate. Maiores dolorem deserunt impedit dolore earum minima!</p>
+</body>
