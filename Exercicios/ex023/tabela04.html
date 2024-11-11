@@ -11,7 +11,7 @@
         td,th{
             border: 1px solid black;
             height: 30px;
-            width: 200px;
+            width: 150px;
             padding: 5px;
 }
 table {
@@ -22,6 +22,10 @@ caption {
     font-weight: bold;
     font-size: 1.4em;
 }
+caption {
+    border: 1px solid black;
+
+}
     </style>
 </head>
 <body>
@@ -30,14 +34,14 @@ caption {
         <caption>Filmes Favoritos</caption>
         <thead>
             <tr>
-                <th>Grupos</th>
-                <th>Nomes</th>
-                <th colspan="4">Filmes</th>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="4">Filmes</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
                 <td colspan="2">Ana maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -56,7 +60,7 @@ caption {
                 <td>Big hero</td>
             </tr>
             <tr>
-                <th rowspan="3">Homens</th>
+                <th scope="rowgroup" rowspan="3">Homens</th>
                 <td colspan="2">Bruno Mendonça</td>
                 <td>Intocaveis</td>
                 <td>Amnésia</td>
