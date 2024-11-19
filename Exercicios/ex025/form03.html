@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <h1>Teste formularios</h1>
+    <form action="" method="get">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome do aluno">
+        </p>
+        <p>
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" placeholder="0 a 10" min="0" max="10" step="0.1" required>
+        </p>
+        <p>
+            <label for="iano">Mês da prova:</label>
+            <input type="month" name="ano" id="iano">
+        </p>
+        <p>
+            <label for="idia">Dia da prova:</label>
+            <input type="date" name="Dia" id="idia">
+        </p>
+        <p>
+            <label for="ihora">Horário da prova:</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
