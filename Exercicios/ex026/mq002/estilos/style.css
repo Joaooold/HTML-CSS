@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(38, 38, 190);
+}
+
+h1 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 3px 3px 5px black;
+}
+
