@@ -11,15 +11,31 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 header {
-    background-color: #8f8f8d;
+    background-color: #949494;
 }
 
 h1 {
     text-align: center;
     padding-top:10px ;
-    
-    
 }
+
+#burguer {
+    background-color: rgb(68, 68, 68);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+#burguer:hover {
+    background-color: white;
+    color: black;
+}
+#itens {
+    display: none;
+    cursor: pointer;
+}
+
 li{
     text-align: center;
     list-style-type: none;
