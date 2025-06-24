@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .conteiner {
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row wrap;
+            height: 400px;
+            
+            
+            
+            
+        }
+        .itens {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+            
+            
+            
+        }
+        #iA {
+            background-color: rgb(67, 187, 187);
+            align-self: flex-start;
+        }
+        #iB {
+            background-color: rgb(22, 87, 31);
+            align-self: self-start;
+        }
+        #iC {
+            background-color: rgb(1, 5, 255);
+            align-self: center;
+        }
+        #iD {
+            background-color: rgb(228, 59, 205);
+            align-self: flex-end;
+        }
+        #iE {
+            background-color: rgb(255, 0, 0);
+            align-self: flex-end;
+        }
+        #iF {
+            background-color: rgb(208, 255, 0);
+        }
+        #iG {
+            background-color: rgb(30, 255, 0);
+            align-self: auto;
+        }
+        #iH {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            border: 1px solid rgb(255, 0, 0);
+            align-self: flex-start;
+        }
+        #iI {
+            background-color: rgb(255, 187, 0);
+        }
+        #iJ {
+            background-color: aqua;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="itens" style="order: 4; " id="iA">A</div>
+        <div class="itens" style="order: 2; " id="iB">B</div>
+        <div class="itens" style="order: 1; " id="iC">C</div>
+        <div class="itens" style="order:0 -3; " id="iD">D</div>
+        <div class="itens" style="order: -9; " id="iE">E</div>
+        <div class="itens" style="order: -1; " id="iF">F</div>
+        <div class="itens" style="order: 9; " id="iG">G</div>
+        <div class="itens" style="order: 7; " id="iH">H</div>
+        <div class="itens" style="order: 2 ; "id="iI">I</div>
+        <div class="itens" style="order: 10; " id="iJ">J</div
