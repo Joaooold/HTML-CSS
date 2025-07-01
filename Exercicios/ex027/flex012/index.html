@@ -8,25 +8,36 @@
         .conteiner {
             background-color: lightcoral;
             display: flex;
-            
-            
+            flex-flow: row nowrap;
         }
         .itens {
             background-color: lightskyblue;
-            flex: auto;
             border: 1px solid black;
             text-align: center;
             
+            
+        }
+        #cxA {
+            background-color: blueviolet;
+            flex: 2 1 150px;
+        
+        }
+        #cxB {
+            background-color: chartreuse;
+            flex: 4 1 150px;
+        }
+        #cxC {
+            background-color: darkorange;
+            flex: 1 1 150px;
         }
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="itens">A</div>
-        <div class="itens">B</div>
-        <div class="itens">C</div>
-        <div class="itens">D</div>
-        <div class="itens">E</div>
+        <div class="itens" id="cxA">A</div>
+        <div class="itens" id="cxB">B</div>
+        <div class="itens" id="cxC">C</div>
+
     </div>
 </body>
 </html>
