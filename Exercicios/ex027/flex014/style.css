@@ -8,9 +8,13 @@ body {
     font-size: 1em;
     line-height: 1.5em;
 }
-p, h1, h2 {
+p {
     margin-bottom: 10px;
     text-align: justify;
+}
+h1, h2 {
+    line-height: 1.4em;
+    text-align: center;
 }
 header, .normal {
     padding: 20px;
